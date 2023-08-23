@@ -43,21 +43,18 @@ Open Microsoft Azure and create a Virtual Machine (VM). Choose Windows 10 Pro, a
 </p>
 <p>
 Once we access our VM through Remote Desktop (RDP), we need to install and enable Internet Information Services (IIS) along with CGI, Common HTTP Features, and the IIS Management Console. IIS serves as the web server for osTicket, making this a necessary step. To begin, access the Control Panel by navigating to Search -> type "control panel" -> Programs -> Turn Windows features on or off. Scroll down and expand the Internet Information Services section, then enable the following:
-</p>
-<p>
+
 - World Wide Web Services -> Application Development Features ->
-</p>
-<p> 
-[X] CGI
-</p>
-<p>  
-[X] Common HTTP Features(expand and ensure that all boxes under this category are checked.)
-</p>
+
+  [X] CGI
+ 
+  [X] Common HTTP Features(expand and ensure that all boxes under this category are checked.)
+
 - Internet Information Services -> Web Management Tools -> IIS Management Console
-[X] IIS Management Console
-</p>
-<p>
-Once that's done, we can check if IIS is properly installed. Open the browser and type "127.0.0.1"; the page should resemble the image below. If it doesn't appear as shown, we can backtrack and follow the steps above to uninstall and then reinstall.
+
+  [X] IIS Management Console
+
+As soon as it's finished, we can check if IIS is properly installed. Open the browser and type "127.0.0.1"; the page should resemble the image below. If it doesn't appear as shown, we can backtrack and follow the steps above to uninstall and then reinstall.
 </p>
 <p>
 <img src="https://i.imgur.com/bnCEirF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
@@ -65,10 +62,22 @@ Once that's done, we can check if IIS is properly installed. Open the browser an
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/uaKwINI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next we will be downloading and installing all the prerquistes from the Installation Folder. Open <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Folder</a> 
+Next, we will be downloading and installing all the prerequisites from the Google Drive Installation Files. Open the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>, download, and install:
+
+- PHP Manager for IIS
+
+- Rewrite Module
+
+- PHP 7.3.8 (If there's a popup, choose to keep file.)
+
+- VC_redist.x86.exe
+
+- MySQL 5.5.62 (Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration -> Set Password to 'Password1'. No quotes.
+
+Search IIS and right-click to open as Admin. Go to PHP Manager then click "Register PHP". Click "Restart" on the right-pane. Download osTicket from <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> and extract and copy “upload” folder to c:\inetpub\wwwroot. Within c:\inetpub\wwwroot, Rename “upload” to “osTicket”. Back in IIS click "Restart" 
 </p>
 <br />
 
