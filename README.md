@@ -12,7 +12,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure (Virtual Machines/Computer)
 - Remote Desktop
 - Internet Information Services (IIS)
 
@@ -45,7 +45,7 @@ Open Microsoft Azure and create a Virtual Machine (VM). Choose Windows 10 Pro, a
 Once we access our VM through Remote Desktop (RDP), we need to install and enable Internet Information Services (IIS) along with CGI, Common HTTP Features, and the IIS Management Console. IIS serves as the web server for osTicket, making this a necessary step. To begin, access the Control Panel by navigating to Search -> type "control panel" -> Programs -> Turn Windows features on or off. Scroll down and expand the Internet Information Services section, then enable the following:
 </p>
 <p>
-- World Wide Web Services -> Application Development Features -> 
+- World Wide Web Services -> Application Development Features ->
 </p>
 <p> 
 [X] CGI
@@ -68,7 +68,7 @@ Once that's done, we can check if IIS is properly installed. Open the browser an
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next we will be downloading and installing all the prerquistes from the Installation Folder. Open <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Folder</a> 
 </p>
 <br />
 
