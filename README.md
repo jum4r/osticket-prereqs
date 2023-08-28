@@ -22,8 +22,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- PC or Laptop
-- Microsoft Azure Subscription (Create a new one that grants you 200 free credits.)
+- PC or Laptop with Internet
+- Microsoft Azure Subscription (Creating a new account grants you 200 free credits.)
 - Notepad
 - <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> (We'll install these within the VM.)
 - Your free time 
@@ -34,7 +34,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <img src="https://i.imgur.com/nybPIAD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Open Microsoft Azure and create a Virtual Machine (VM). Choose Windows 10 Pro, and allocate at least 2-4 Virtual CPUs (vCPUs). Create a username and password of your choice, and make a note of them. Next, under Networking, allow it to create a new Virtual Network (VNet). Proceed to the "Review + Create" section to initiate the VM creation process. Once the deployment is complete, copy the VM's Public IP address and use Remote Desktop (RDP) to connect to it from your personal PC. On your desktop, go to Search, type "rdp," paste the "VM IP address," and then use the login credentials you created earlier.  
+Open Microsoft Azure and create a Virtual Machine (VM). Under "Resource Groups," click "Create New," and name it whatever you please. Choose Windows 10 Pro, and allocate at least 2-4 Virtual CPUs (vCPUs). Create a username and password of your choice, and make a note of these using Notepad or a similar application. Next, under Networking, allow it to create a new Virtual Network (VNet). Proceed to the "Review + Create" section to initiate the VM creation process. Once the deployment is complete, copy the VM's Public IP address and use Remote Desktop (RDP) to connect to it from your personal PC. On your desktop, go to Search, type "rdp," paste the "VM IP address," and then use the login credentials you created earlier.  
 </p>
 <br />
 
@@ -54,7 +54,7 @@ Once we access our VM through Remote Desktop (RDP), we need to install and enabl
 
   [X] IIS Management Console
 
-As soon as it's finished, we can check if IIS is properly installed. Open the browser and type "127.0.0.1"; the page should resemble the image below. If it doesn't appear as shown, we can backtrack and follow the steps above to uninstall and then reinstall.
+As soon as it's finished, we can check if IIS is properly installed. Open the browser and type "127.0.0.1"; the page should resemble the image below. If it doesn't appear as shown, we can backtrack and follow the steps above to uninstall and then reinstall IIS.
 </p>
 <p>
 <img src="https://i.imgur.com/bnCEirF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
@@ -65,15 +65,15 @@ As soon as it's finished, we can check if IIS is properly installed. Open the br
 <img src="https://i.imgur.com/uaKwINI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, we will be downloading and installing all the prerequisites from the Google Drive Installation Files. Open the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>, download, and install:
+Next, we will be downloading and installing all the prerequisites from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>. Simply download then install these normally
 
 - PHP Manager for IIS
 - Rewrite Module
 - PHP 7.3.8 (If there's a popup, choose to keep file.) Create a new folder on the C: drive and name it 'PHP.' Extract the contents of PHP version 7.3.8 into the newly created 'C:\PHP' folder.
 - VC_redist.x86.exe
-- MySQL 5.5.62 (Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration -> Set Password to 'Password1'. No quotes. Make note of MySQL username: root and password: Password1 in Notepad or something similar.
+- MySQL 5.5.62 (Typical Setup -> Launch Configuration Wizard (after installation) -> Standard Configuration -> Set Password to 'Password1'. No quotes. Make note of MySQL username: root and password: Password1.
 
-Search for IIS and right-click to open it as an administrator. Go to PHP Manager, then click on 'Register PHP.' Point it to 'C:\PHP\php-cgi.exe' and press OK. Go back and click 'Restart' on the right pane under 'Manage Server. 
+Windows Search for IIS and right-click to open it as an administrator. Go to PHP Manager, then click on 'Register PHP.' Point it to 'C:\PHP\php-cgi.exe' and press OK. Go back and click 'Restart' on the right pane under 'Manage Server. 
 
 Download osTicket from the <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a>, extract the contents, and copy the 'upload' folder to 'c:\inetpub\wwwroot.
 
