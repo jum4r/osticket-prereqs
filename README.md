@@ -31,15 +31,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 ### Creating a Free Azure Account
-<img width="886" alt="image" src="https://i.imgur.com/h1oEndK.png">
+<img width="786" alt="image" src="https://i.imgur.com/h1oEndK.png">
 
-1. Sign up: [Azure Free Account](https://azure.microsoft.com/en-us/free/)
-2. <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Free Account</a>
-3. Login: [Azure Portal](https://portal.azure.com)
+1. Sign up: <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Free Account</a>
+2. Login: <a href="https://portal.azure.com" target="_blank">Azure Portal</a>
 
 ### Creating a Virtual Machine then Enabling Internet Information Services (IIS)
 
-<img width="886" alt="image" src="https://i.imgur.com/nybPIAD.png">
+<img width="786" alt="image" src="https://i.imgur.com/CH0z1XB.png">
 
 1. Go to [Azure Portal](https://portal.azure.com)
 2. Search for Virtual Machines and create a new Virtual Machine.
@@ -128,6 +127,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - MySQL Database: osTicket
    - MySQL Username: root
    - MySQL Password: Password1
+7. Install osTicket
   
 ### Cleanup
 
