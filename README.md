@@ -31,10 +31,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Installation Steps</h2>
 
 ### Creating a Free Azure Account
-<img width="886" alt="image" src="https://github.com/joshmadakor1/openvas/assets/39254979/e49a10a8-6f86-4c0a-9baf-5f3e9f6858dd">
+<img width="886" alt="image" src="https://i.imgur.com/h1oEndK.png">
 
 1. Sign up: [Azure Free Account](https://azure.microsoft.com/en-us/free/)
-2. Login: [Azure Portal](https://portal.azure.com)
+2. <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Free Account</a>
+3. Login: [Azure Portal](https://portal.azure.com)
 
 ### Creating a Virtual Machine then Enabling Internet Information Services (IIS)
 
