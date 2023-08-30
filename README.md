@@ -25,7 +25,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - PC or Laptop with Internet
 - Microsoft Azure Subscription (A new account grants you 200 free credits.)
 - Notepad
-- <a href="https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6">Installation Files</a> (We'll install these within the VM.)
+- [Installation Files](https://drive.google.com/drive/u/2/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6) (We'll install these within the VM.)
 - Your free time 
 
 <h2>Installation Steps</h2>
@@ -33,8 +33,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ### Creating a Free Azure Account
 <img width="786" alt="image" src="https://i.imgur.com/h1oEndK.png">
 
-1. Sign up: <a href="https://azure.microsoft.com/en-us/free/" target="_blank">Azure Free Account</a>
-2. Login: <a href="https://portal.azure.com" target="_blank">Azure Portal</a>
+1. Sign up: [Azure Free Account](https://azure.microsoft.com/en-us/free/)
+2. Login: [Azure Portal](https://portal.azure.com)
 
 ### Creating a Virtual Machine then Enabling Internet Information Services (IIS)
 
