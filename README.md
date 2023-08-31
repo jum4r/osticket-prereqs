@@ -58,7 +58,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
    - Expand IIS -> World Wide Web Services -> Application Development Features
    - Enable CGI
    - Enable Common HTTP Features and all boxes under it
-   - Enable IIS Management Console (IIS -> Web Management Tools -> IIS Management Console)
+   - Expand IIS -> Web Management Tools -> IIS Management Console
+   - Enable IIS Management Console
    - Press OK to install
 7. Once IIS is installed, check if it's properly set up.
 8. Open a browser, type 127.0.0.1, and it should take you to the IIS landing page.
